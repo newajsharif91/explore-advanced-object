@@ -10,13 +10,14 @@ const student = {
     this.exam();
     return `${this.name} is takeing improvement exam on ${subject}`;
   },
-  treatDey: function (amount) {
-    this.money = this.money - amount;
+  //   Acces Another Property and You can change
+  treatDey: function (amount, tips) {
+    this.money = this.money - amount - tips;
     return this.money;
   },
 };
 const output = student.exam();
 const reExam = student.improveExam("Algebra");
 console.log(reExam);
-const remaining = student.treatDey(900);
+const remaining = student.treatDey(900, 100);
 console.log(remaining);
