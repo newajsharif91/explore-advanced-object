@@ -35,3 +35,6 @@ for (const key of keys) {
 for (const key in bollte) {
   console.log(key);
 }
+// Advanced
+const pair=Object.entries(bollte)
+console.log(pair);
